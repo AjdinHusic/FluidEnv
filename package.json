@@ -1,6 +1,6 @@
 {
   "name": "fluidenv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "utility library that generates and uses run-time and docker-friendly env variables, that can load the env configuration post production build.",
   "bin": {
     "fluidenv": "./main.js"
