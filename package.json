@@ -1,0 +1,11 @@
+{
+  "name": "runtime-env",
+  "version": "1.0.0",
+  "description": "utility library that generates and uses run-time and docker-friendly env variables, that can load the env configuration post production build.",
+  "scripts": {
+    "env": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajdin Husic",
+  "license": "MIT"
+}
