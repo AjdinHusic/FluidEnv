@@ -6,8 +6,7 @@
     "fluidenv": "./main.js"
   },
   "scripts": {
-    "env": "node main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "env": "node main.js"
   },
   "author": "Ajdin Husic",
   "license": "MIT"

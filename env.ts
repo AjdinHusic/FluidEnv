@@ -1,5 +1,3 @@
-import "/__ENV.js";
-
 export function env(
   key: string,
   defaultValue?: string,
