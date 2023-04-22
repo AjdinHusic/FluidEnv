@@ -1,11 +1,15 @@
-import "./__ENV.js";
+import "/__ENV.js";
 
-export function env(key: string, defaultValue?: string, prefixes: string[] = ['REACT_APP', 'REACT', 'VITE']): string | undefined {
-  const safeKeys = prefixes.map(prefix => `${prefix}_${key}`).concat(key);
+export function env(
+  key: string,
+  defaultValue?: string,
+  prefixes: string[] = ["REACT_APP", "REACT", "VITE"]
+): string | undefined {
+  const safeKeys = prefixes.map((prefix) => `${prefix}_${key}`).concat(key);
   const envObject = {
     ...import.meta.env,
-    ...(hasBrowserEnvironment() ? window.__ENV : {})
-  }
+    ...(hasBrowserEnvironment() ? window.__ENV : {}),
+  };
 
   for (const safeKey of safeKeys) {
     if (safeKey in envObject) {
