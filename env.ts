@@ -1,3 +1,9 @@
+declare global {
+  interface Window {
+    __ENV?: Record<string, any>;
+  }
+}
+
 export function env(
   key: string,
   defaultValue?: string,
